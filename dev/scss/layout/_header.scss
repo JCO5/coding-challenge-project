@@ -1,2 +1,11 @@
-@use "variables" as *;
+@use "abstract/variables" as *;
+
+.logo-menu {
+    background-color: $white;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+
+
 
