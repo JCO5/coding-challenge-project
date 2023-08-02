@@ -55,39 +55,7 @@
         }
 }
 
-.recipes {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1rem;
-    margin-left: .5rem;
-    margin-right: .5rem;
-    & div {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        background-color: $almost-white;
-        align-items: center;
-    }
-    & div img {
-        width: 8.5rem;
-        height: 8.5rem;
-        border: 3px solid $light-blue;
-        z-index: 1;
-        margin: 1rem;
-    }
-    & div h1 {
-        color: $white;
-        left: 1rem;
-        z-index: 2;
-        padding: 1rem;
-        font-weight: 100;
-        margin: 0;
-    }
-    & div h2 {
-        font-weight: 100;
-        font-size: 2rem;
-    }
-}
+
 
 .blog {
     display: flex;
