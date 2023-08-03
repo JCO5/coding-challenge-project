@@ -1,4 +1,5 @@
 @use "abstract/variables" as *;
+@use "abstract/mixins" as *;
 h3 {
   color: black;
 }
@@ -39,7 +40,7 @@ main{
     padding: 1rem;
     font-weight: 400;
     font-family: $heading-nav-font;
-    text-transform: $uppercase;
+    @include uppercase-text;
     margin-bottom: 0;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -55,7 +56,7 @@ main{
     font-family:$body-font;
     font-size: 1rem;
     margin:0;
-    text-transform: $uppercase;
+    @include uppercase-text;
     padding:0;
     font-weight:300; 
     @media (min-width:500px){
@@ -92,7 +93,7 @@ main{
     padding: 1rem;
     font-weight: 400;
     font-family: $heading-nav-font;
-    text-transform: $uppercase;
+    @include uppercase-text;
     margin-bottom: 0;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
