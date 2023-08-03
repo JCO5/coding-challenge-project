@@ -1,4 +1,5 @@
 @use "abstract/variables" as *;
+@use "abstract/mixins" as *;
 
 .gallery {
     display: flex;
@@ -129,4 +130,37 @@
     padding: 0 .5rem;
     text-align: center;
     align-items: center;
+}
+
+// older posts
+
+
+.older-posts-div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+
+    & h2 {
+        @include uppercase-text;
+        font-size: 2rem;
+        color: $dark-blue;
+    }
+
+    & span {
+        border-radius: 50%;
+        background-color: $dark-blue;
+        padding: .75rem ;
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        display: inline-block;
+        padding: 8px;
+        margin-right: .25rem;
+        color: white;
+        font-size: 2rem;
+        
+      }
+
+  
 }
