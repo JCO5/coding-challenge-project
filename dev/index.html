@@ -16,13 +16,24 @@
 	<link rel="stylesheet" href="styles/styles.css?cachebuster=1">
 </head>
 <body>
-
+	
 	<header>
 
 		<div class="logo-menu">
-			<img src="images/small-logo.jpg" alt="Small Logo">
+			<img src="images/logo.png" alt="Logo" class="logo">
+			<img src="images/small-logo.jpg" alt="Small Logo" class="small-logo">
 			<img src="images/menu.png" alt="Hamburger Menu" id="hamburger-icon">
+			<div id="big-searchbar">
+				<input type="text" placeholder="Search">
+				<img src="images/search.png" alt="Search Magnifying Glass">
+			</div>
+			<div id="big-social-media">
+				<img src="images/svgs/brands/facebook-f.svg" alt="Facebook" class="filter-blue" id="facebook-icon-header">
+				<img src="images/svgs/brands/google.svg" alt="Google" class="filter-blue">
+				<img src="images/svgs/brands/twitter.svg" alt="Twitter" class="filter-blue">
+				</div>
 		</div>
+
 
 		<nav id="main-nav">
 			<div id="searchbar">
@@ -36,14 +47,26 @@
 				<li>Recipes</li>
 				<li>Contact</li>
 			</ul>
+			<div id="searchbar2">
+				<input type="text" placeholder="Search">
+				<img src="images/search.png" alt="Search Magnifying Glass">
+			</div>
 			<!-- use font awesome for social media icons -->
 			<div id="social-media">
-			<img src="images/svgs/brands/facebook.svg" alt="Facebook" class="filter-blue">
-			<img src="images/svgs/brands/google.svg" alt="Google" class="filter-blue">
-			<img src="images/svgs/brands/twitter.svg" alt="Twitter" class="filter-blue">
-			</div>
-		
-		</nav>
+				<div class="icon-wrapper">
+				  <img src="images/svgs/brands/facebook-f.svg" alt="Facebook" class="filter-blue" id="facebook-icon">
+				 
+				</div>
+				<div class="icon-wrapper">
+				  <img src="images/svgs/brands/google.svg" alt="Google" class="filter-blue">
+				
+				</div>
+				<div class="icon-wrapper">
+				  <img src="images/svgs/brands/twitter.svg" alt="Twitter" class="filter-blue">
+			
+				</div>
+			  </div>
+
 		
 	</header>
 
