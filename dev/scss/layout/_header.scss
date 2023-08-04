@@ -9,6 +9,27 @@
   padding: 0.5rem;
 }
 
+/* Larger logo - Fluid and responsive */
+.logo {
+  width: 70%;
+  max-width: 400px; /* Set the maximum width */
+  height: auto; /* Maintain the aspect ratio */
+  padding: 7px;
+}
+
+.small-logo {
+  display: none;
+}
+
+@media (max-width: 325px) {
+  .logo {
+      display: none;
+  }
+  .small-logo {
+      display: inline-block;
+  }
+}
+
 nav {
   display: none; /* Hide the entire navigation by default */
 }
@@ -19,7 +40,8 @@ nav {
   /* Show the navigation when the active class is present */
 }
 
-// search bar styling
+
+// hamburger search bar styling
 
 #searchbar {
   display: flex;
@@ -47,12 +69,17 @@ ul {
   // removed the bullets and the margins and padding from the list
   list-style-type: none;
   margin: 0;
-  padding: 5px;
+  padding: 0; 
   background-color: $light-blue;
+
+  
   li {
+    font-family: $heading-nav-font;
     color: $almost-white;
-    display: block;
     text-align: center;
+    padding: 5px;
+    width: 100%;
+    border-bottom: 1px solid $dark-blue; 
     cursor: pointer;
     &:hover {
       color: $dark-blue;
@@ -68,6 +95,7 @@ ul {
   display: flex;
   justify-content: center;
   padding: 5px;
+  gap: 5px;
   img {
     width: 25px;
     cursor: pointer;
@@ -79,6 +107,154 @@ ul {
         brightness(115%) contrast(82%);
     }
   }
+}
+
+#big-searchbar {
+  display: none;
+}
+
+// hide hamburger menu on screens width 500px or more
+
+@media (min-width: 500px) {
+  #hamburger-icon {
+  display: none;
+  }
+
+  #searchbar {
+    display: none;
+  }
+
+  #main-nav {
+    display: flex;
+  }
+
+//  styling for dekstop searchbar
+
+  #big-searchbar {
+
+    display: flex;
+    align-items: center;
+    position: relative;
+    input {
+      width: 100%;
+      padding: 10px;
+      background-color: $search-bar-grey;
+      border-radius: 5px;
+      border: 1px solid transparent;
+      box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.5);
+    }
+    img {
+      position: absolute;
+      right: 0;
+      padding: 5px;
+    }
+  }
+
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    li {
+      padding: 12px;
+      &:hover {
+        color: $dark-blue;
+        background-color: $almost-white;
+        
+      }
+    }
+  }
+
+  #social-media {
+    display: none;
+  }
+
+}
+
+#big-social-media {
+  display: none;
+}
+
+#searchbar2 {
+  display: none;
+}
+
+
+// social media icons appear
+@media (min-width: 700px) {
+  #big-social-media {
+    display: flex;
+     margin-right: 70px;
+    flex-direction: row;
+    gap: 10px;
+     width: 25px;  
+     img {
+      width: 25px;
+      cursor: pointer;
+      transition: 0.5s;
+  
+      &:hover {
+        filter: invert(99%) sepia(0%) saturate(2519%) hue-rotate(179deg)
+          brightness(115%) contrast(82%);
+      }
+    }
+  }
+
+}
+
+
+// hide searchbar on screens width 775px or more
+@media (min-width: 775px) {
+  /* Hide the big search bar on larger screens */
+  #big-searchbar {
+    display: none;
+  }
+
+
+  /* Display the search bar on larger screens */
+  #searchbar2 {
+    display: flex;
+    align-items: center; 
+    position: relative;
+    right: 0;
+    flex-grow: 1;
+    z-index: 99; 
+    img {
+      position: absolute;
+      right: 0;
+      padding: 5px;
+    }
+ input {
+  width: 100%;
+  padding: 5px;
+  background-color: $search-bar-grey;
+  height: 35px;
+  border: 1px solid transparent;
+ }
+  }
+
+  
+
+  ul {
+    position: relative;
+    width: 100%;
+    font-size: large;
+    li {
+      margin-left: 40px;
+    }
+  }
+}
+
+#facebook-icon-header {
+  height: 27px;
+  padding-top: 15px;
+}
+
+
+#facebook-icon {
+  height: 30px;
+  padding-bottom: 3px;
 }
 
 // coloring of icons
