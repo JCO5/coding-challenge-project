@@ -9,7 +9,7 @@
 	<!-- Put Google Fonts Here -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
 	<!-- end Google Fonts -->
 
 	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
@@ -50,66 +50,70 @@
 	<main>
 		<section class="gallery">
 			<div class="gallery-1">
-				<img src="images/mussel.jpg" alt="mussels" srcset=" images/mussel.jpg 330w images/mussel-small.jpg 350w" sizes="(max-width: 770px) " >
-				<h1> lorem ipsum dolor sit </h1>
+				<img src="images/mussel-small.jpg"
+				alt="mussels"
+				srcset="images/mussel.jpg 770w, images/mussel-small.jpg 330w"
+				sizes="(max-width: 770px) 100vw, 330px">	   
+				<h1> Lorem Ipsum Dolor Sit </h1>
 			</div>
 			<div class="gallery-2">
 				<img src="images/salad.jpg" alt="salad">
-				<h1> lore, ipsum dolor </h1>
+				<h1> Lorem, Ipsum Dolor </h1>
 			</div>
 			<div class="gallery-3">
 				<img src="images/pancake.jpg" alt="pancake">
-				<h1> sit amet consectetur </h1>
+				<h1> Sit Amet Consectetur </h1>
 			</div>
 		</section>
 		<section class="sidebar">
-			<div class="recipes">
-				<h2> latest recipes </h2>
-				<ul>
-					<li>
-						<img src="images/lamb-tb.jpg" alt="lamb">
-						<h3>met consec tetur elit</h3>
-					</li>
-					<li>
-						<img src="images/breakfast-tb.jpg" alt="breakfast">
-						<h3>archi tecto dolores</h3>
-					</li>
-					<li>
-						<img src="images/calamari-tb.jpg" alt="calamari">
-						<h3>mexpe dita ciatis</h3>
-					</li>
-					<li>
-						<img src="images/steak-tb.jpg" alt="steak">
-						<h3>fugiat eaque aore</h3>
-					</li>
-				</ul>
-			</div>
-			<div class="cuisines">
-				<h2>cuisines</h2>
-				<ul>
-					<li>American(95)</li>
-					<li>Asian(33)</li>
-					<li>Cambodian(3)</li>
-					<li>Chinese(281)</li>
-					<li>Filipino(8)</li>
-					<li>French(40)</li>
-					<li>German(7)</li>
-					<li>Greek(29)</li>
-					<li>Indian(44)</li>
-					<li>Italian(60)</li>
-					<li>Jamaican(7)</li>
-					<li>Korean(120)</li>
-					<li>Japanese(202)</li>
-					<li>Malaysian(12)</li>
-					<li>Mediterranean(9)</li>
-					<li>Mexican(25)</li>
-					<li>Southern(14)</li>
-				</ul>
-			</div>
-	</section>
+		<div class="recipes">
+			<h2> Latest Recipes </h2>
+			<ul>
+				<li>
+					<img src="images/lamb-tb.jpg" alt="lamb">
+					<h3>Met Consec Tetur Elit</h3>
+			    </li>
+				<li>
+					<img src="images/breakfast-tb.jpg" alt="breakfast">
+					<h3>Archi Tecto Dolores</h3>
+				</li>
+				<li>
+					<img src="images/calamari-tb.jpg" alt="calamari">
+					<h3>Mexpe Dita Ciatis</h3>
+				</li>
+				<li>
+					<img src="images/steak-tb.jpg" alt="steak">
+					<h3>Fugiat Eaque Aore</h3>
+				</li>
+			</ul>
+		</div>
+		<div class="cuisines">
+			<h2>Cuisines</h2>
+			<ul>
+				<li>American(95)</li>
+				<li>Asian(33)</li>
+				<li>Cambodian(3)</li>
+				<li>Chinese(281)</li>
+				<li>Filipino(8)</li>
+				<li>French(40)</li>
+				<li>German(7)</li>
+				<li>Greek(29)</li>
+				<li>Indian(44)</li>
+				<li>Italian(60)</li>
+				<li>Jamaican(7)</li>
+				<li>Korean(120)</li>
+				<li>Japanese(202)</li>
+				<li>Malaysian(12)</li>
+				<li>Mediterranean(9)</li>
+				<li>Mexican(25)</li>
+				<li>Southern(14)</li>
+			</ul>
+		</div>
+		</section>
+		<div>
 		<section class="blog">
 			<div class="blog-1">
-				<h1>LOREM IPSUM DOLOR SIT AMET</h1>
+				<h1>Lorem Ipsum Dolor Sit Amet</h1>
 				<p>Posted by Mike Lee on Sunday, August 25, 2013</p>
 				<img src="images/pasta.jpg" alt="pasta">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illumodio commodi nesciunt nisi eius aperiam sint.</p>
@@ -118,7 +122,7 @@
 				</div>
 			</div>
 			<div class="blog-2">
-				<h1>VEL, EAQUE QUISOUAM SIT AMET</h1>
+				<h1>Vel, Eaque Quisouam Sit Amet</h1>
 				<p>Posted by Mike Lee on Monday, July 29, 2013</p>
 				<img src="images/ramen.jpg" alt="ramen">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, ab aspernatur illumodio commodi nesciunt nisi eius aperiam sint.</p>
@@ -128,8 +132,7 @@
 			</div>
 		</section>
 		<section class="older-posts-div">
-			<span>&lt;</span>
-			<h2>Older Posts</h2>
+			<img class="older-posts" src="images/previous-btn.png" alt="Older Posts">
 		</section>
 	</main>
 	<footer>
