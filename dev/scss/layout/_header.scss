@@ -9,17 +9,19 @@
   padding: 0.5rem;
 }
 
-/* Larger logo - Fluid and responsive */
+
+/* Larger logo */
 .logo {
   width: 70%;
-  max-width: 400px; /* Set the maximum width */
-  height: auto; /* Maintain the aspect ratio */
+  max-width: 400px; 
+  height: auto; 
   padding: 7px;
 }
 
 .small-logo {
   display: none;
 }
+
 
 @media (max-width: 325px) {
   .logo {
@@ -60,32 +62,36 @@ nav {
 
 // navigation menu
 
-ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  // removed the bullets and the margins and padding from the list
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: $light-blue;
-
-  li {
-    font-family: $heading-nav-font;
-    color: $almost-white;
-    text-align: center;
-    padding: 5px;
-    width: 100%;
-    border-bottom: 1px solid $dark-blue;
-    cursor: pointer;
-    &:hover {
-      color: $dark-blue;
-      background-color: $almost-white;
+#main-nav {
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // removed the bullets and the margins and padding from the list
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: $light-blue;
+  
+    li {
+      font-family: $heading-nav-font;
+      color: $almost-white;
+      text-align: center;
+      padding: 5px;
       width: 100%;
+      border-bottom: 1px solid $dark-blue;
+      cursor: pointer;
+      &:hover {
+        color: $dark-blue;
+        background-color: $almost-white;
+        width: 100%;
+      }
     }
   }
 }
+
+
 
 /* Social media icons styling */
 
@@ -106,6 +112,12 @@ ul {
     }
   }
 }
+
+/* Coloring of icons */
+.filter-blue {
+  filter: invert(32%) sepia(13%) saturate(2432%) hue-rotate(175deg) brightness(92%) contrast(86%);
+}
+
 
 #big-searchbar {
   display: none;
@@ -147,6 +159,7 @@ ul {
     }
   }
 
+  #main-nav {
   ul {
     width: 100%;
     display: flex;
@@ -164,6 +177,7 @@ ul {
   #social-media {
     display: none;
   }
+}
 }
 
 #big-social-media {
@@ -197,7 +211,7 @@ ul {
 
 // hide searchbar on screens width 775px or more
 @media (min-width: 775px) {
-  /* Hide the big search bar on larger screens */
+  /* Hide the header search bar on larger screens */
   #big-searchbar {
     display: none;
   }
@@ -224,6 +238,7 @@ ul {
     }
   }
 
+  #main-nav {
   ul {
     position: relative;
     width: 100%;
@@ -233,6 +248,7 @@ ul {
     }
   }
 }
+}
 
 #facebook-icon-header {
   height: 27px;
@@ -240,13 +256,7 @@ ul {
 }
 
 #facebook-icon {
-  height: 30px;
+  height: 27px;
   padding-bottom: 3px;
 }
 
-// coloring of icons
-
-.filter-blue {
-  filter: invert(32%) sepia(13%) saturate(2432%) hue-rotate(175deg)
-    brightness(92%) contrast(86%);
-}
