@@ -22,8 +22,7 @@
   display: none;
 }
 
-
-@media (max-width: 325px) {
+@media (max-width: 330px) {
   .logo {
     display: none;
   }
@@ -209,9 +208,9 @@ nav {
   }
 }
 
-// hide searchbar on screens width 775px or more
-@media (min-width: 775px) {
-  /* Hide the header search bar on larger screens */
+// hide searchbar on screens width 770px or more
+@media (min-width: 770px) {
+  /* Hide the big search bar on larger screens */
   #big-searchbar {
     display: none;
   }
