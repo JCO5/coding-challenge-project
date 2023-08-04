@@ -1,6 +1,5 @@
 @use "variables" as *;
-
-@mixin flex-center {
-    display: flexbox;
-
-}
+@mixin uppercase-text {
+    text-transform: uppercase;
+  }
+  

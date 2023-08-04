@@ -1,0 +1,10 @@
+@use "abstract/variables" as *;
+
+footer {
+    background-color: $dark-blue;
+    text-align: center;
+    padding: 1rem;
+    & p {
+        color: $almost-white;
+    }
+}

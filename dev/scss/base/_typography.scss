@@ -1,2 +1,15 @@
 // Typography Styles
-@use "variables" as *;
+@use "abstract/variables" as *;
+
+body {
+    font-family: $body-font;
+}
+
+h1, h2, h3, nav a, table {
+    font-family: $heading-nav-font;
+}
+
+p {
+   font-family:  $body-font;
+}
+
