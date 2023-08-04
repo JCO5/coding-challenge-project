@@ -73,10 +73,14 @@
 	<main>
 		<section class="gallery">
 			<div class="gallery-1">
-				<img src="images/mussel-small.jpg"
-				alt="mussels"
-				srcset="images/mussel.jpg 770w, images/mussel-small.jpg 330w"
-				sizes="(max-width: 770px) 100vw, 330px">	   
+				<picture>
+					<!-- Image size: 100px for screen sizes below 500px -->
+					<source media="(max-width: 500px)" srcset="images/mussel-small.jpg 320w">
+					<!-- Image size: 320px for screens above 500px -->
+					<source srcset="images/mussel.jpg 500w">
+					<!-- Fallback image -->
+					<img alt="mussels" src="images/mussel-small.jpg">
+				  </picture>
 				<h1> Lorem Ipsum Dolor Sit </h1>
 			</div>
 			<div class="gallery-2">
