@@ -1,6 +1,11 @@
 @use "abstract/variables" as *;
 @use "abstract/mixins" as *;
 
+main {
+    max-width: 1250px;
+margin: 0 auto;
+}
+
 .gallery {
     display: flex;
     flex-direction: column;
