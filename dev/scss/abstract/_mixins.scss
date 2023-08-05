@@ -2,4 +2,9 @@
 @mixin uppercase-text {
     text-transform: uppercase;
   }
+
+  @mixin social-icon {
+    height: 25px;
+    margin-top: 23px;
+  }
   
