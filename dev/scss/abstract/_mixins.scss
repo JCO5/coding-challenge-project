@@ -9,4 +9,8 @@
     gap: $gap;
   }
 
+  @mixin social-icon {
+    height: 25px;
+    margin-top: 23px;
+  }
   
